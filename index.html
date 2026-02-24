@@ -16,35 +16,35 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #0f172a;
+    background: #0b1220; /* outer blank area */
     color: #e2e8f0;
-    line-height: 1.6;
 }
 
-.container {
-    max-width: 1100px;
+/* Center Highlighted Column */
+.wrapper {
+    max-width: 720px;
     margin: auto;
-    padding: 80px 20px;
+    background: #111827;
+    min-height: 100vh;
+    padding: 70px 40px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.6);
 }
 
+/* Typography */
 h1 {
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-top: 60px;
     color: #60a5fa;
 }
 
 p {
     color: #cbd5e1;
-}
-
-.hero {
-    text-align: center;
-    padding-top: 100px;
+    line-height: 1.7;
 }
 
 .highlight {
@@ -52,14 +52,22 @@ p {
     font-weight: 600;
 }
 
+/* Hero */
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Buttons */
 .buttons a {
     display: inline-block;
     margin: 10px;
-    padding: 12px 24px;
+    padding: 10px 22px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s ease;
+    font-size: 14px;
 }
 
 .primary {
@@ -78,15 +86,16 @@ p {
 
 .secondary:hover {
     background: #60a5fa;
-    color: #0f172a;
+    color: #111827;
 }
 
+/* Cards */
 .card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 30px 0;
-    transition: transform 0.3s ease, opacity 0.6s ease;
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: 0.4s ease;
     opacity: 0;
     transform: translateY(20px);
 }
@@ -96,58 +105,54 @@ p {
     transform: translateY(0);
 }
 
-.metrics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Metrics */
+.metric {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
     text-align: center;
 }
 
-.metric {
-    flex: 1;
-    min-width: 200px;
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 10px;
-}
-
 .metric h3 {
-    font-size: 30px;
+    font-size: 26px;
     color: #60a5fa;
     margin: 0;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 40px;
-    background: #020617;
-    color: #94a3b8;
+    margin-top: 80px;
+    color: #64748b;
+    font-size: 13px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container hero">
-    <h1>RG</h1>
-    <p class="highlight">
-        Senior Marketing Automation QA Consultant
-    </p>
-    <p>
-        13+ Years | Salesforce Marketing Cloud | Adobe Campaign | Automation Validation
-    </p>
-    <p>
-        Reduced Defects by 25% • 2000+ Campaigns Tested • 25% Faster Turnaround
-    </p>
+<div class="wrapper">
 
-    <div class="buttons">
-        <a href="mailto:ratneshnit@gmail.com" class="primary">Contact Me</a>
-        <a href="https://linkedin.com/in/rats5210" target="_blank" class="secondary">LinkedIn</a>
-        <a href="RG_MarTech_QA_Resume.pdf" download class="secondary">Download Resume</a>
+    <div class="hero">
+        <h1>RG</h1>
+        <p class="highlight">
+            Senior Marketing Automation QA Consultant
+        </p>
+        <p>
+            13+ Years | Salesforce Marketing Cloud | Adobe Campaign | Automation Validation
+        </p>
+        <p>
+            Reduced Defects by 25% • 2000+ Campaigns Tested • 25% Faster Turnaround
+        </p>
+
+        <div class="buttons">
+            <a href="mailto:ratneshnit@gmail.com" class="primary">Contact Me</a>
+            <a href="https://linkedin.com/in/rats5210" target="_blank" class="secondary">LinkedIn</a>
+            <a href="RG_MarTech_QA_Resume.pdf" download class="secondary">Download Resume</a>
+        </div>
     </div>
-</div>
 
-<div class="container">
     <h2>Why Companies Trust Me</h2>
     <div class="card">
         ✔ 13+ Years in MarTech & Campaign QA<br><br>
@@ -158,23 +163,25 @@ footer {
     </div>
 
     <h2>Quantified Impact</h2>
-    <div class="metrics">
-        <div class="metric">
-            <h3>2000+</h3>
-            Campaigns Tested
-        </div>
-        <div class="metric">
-            <h3>25%</h3>
-            Defect Reduction
-        </div>
-        <div class="metric">
-            <h3>25%</h3>
-            Faster Turnaround
-        </div>
-        <div class="metric">
-            <h3>13+</h3>
-            Years Experience
-        </div>
+
+    <div class="metric">
+        <h3>2000+</h3>
+        Campaigns Tested
+    </div>
+
+    <div class="metric">
+        <h3>25%</h3>
+        Defect Reduction
+    </div>
+
+    <div class="metric">
+        <h3>25%</h3>
+        Faster Turnaround
+    </div>
+
+    <div class="metric">
+        <h3>13+</h3>
+        Years Experience
     </div>
 
     <h2>Core Expertise</h2>
@@ -200,21 +207,21 @@ footer {
         <strong>Result:</strong> Reduced personalization defects by 40% and improved campaign stability.
     </div>
 
-    <div style="text-align:center; margin-top:60px;">
-        <h2>Let’s Improve Your Campaign Quality</h2>
-        <p>
-            Hiring a Senior Marketing Automation QA Specialist?
-            Let’s discuss how I can strengthen your campaign reliability.
-        </p>
-        <div class="buttons">
-            <a href="mailto:ratneshnit@gmail.com" class="primary">Schedule Discussion</a>
-        </div>
-    </div>
-</div>
+    <h2>Let’s Improve Your Campaign Quality</h2>
+    <p>
+        Hiring a Senior Marketing Automation QA Specialist?
+        Let’s discuss how I can strengthen your campaign reliability.
+    </p>
 
-<footer>
-    © 2026 RG | Senior Marketing Automation QA Consultant
-</footer>
+    <div class="buttons">
+        <a href="mailto:ratneshnit@gmail.com" class="primary">Schedule Discussion</a>
+    </div>
+
+    <footer>
+        © 2026 RG | Senior Marketing Automation QA Consultant
+    </footer>
+
+</div>
 
 <script>
 const cards = document.querySelectorAll('.card');
